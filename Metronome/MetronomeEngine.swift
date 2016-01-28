@@ -9,32 +9,47 @@
 import UIKit
 
 // Metronome timer using CADisplayLink
-public class MetronomeLoop {
+public class MetronomeEngine {
     
-    var internalHandler: () -> () = {}
     var displayLink: CADisplayLink!
     var triggerTime: Double
     var counter: Int
     var stamp: CFTimeInterval
+    var barArray: [Int]?
     var diffFires: [Double]
 
-    
+    let akMetronome: SetupAKMetronome
+
+
+
     init() {
         triggerTime = 0
         counter = 0
         stamp = 0.0
+        barArray = nil
         diffFires = []
+        akMetronome = SetupAKMetronome()
+    }
+    
+    
+    init(bar: [Int]) {
+        
+        triggerTime = 0
+        counter = 0
+        stamp = 0.0
+        barArray = bar
+        diffFires = []
+        akMetronome = SetupAKMetronome()
     }
     
     
     
-    
     // Called every frame from startLoop's CADisplayLink call
-    @objc func update(sender: CADisplayLink) {
+    @objc private func callTickTock(sender: CADisplayLink) {
         
         // sets initial timestamp and plays first click
         if stamp == 0.0 {
-            self.internalHandler()
+            self.tickOrTock()
             stamp = sender.timestamp
         }
         
@@ -57,28 +72,60 @@ public class MetronomeLoop {
         diffFires.append(diff)
         
         // Execute code block and set stamp
-        self.internalHandler()
+        self.tickOrTock()
         stamp = sender.timestamp
         
     }
-    
-    // Starts the clicking.
-    // - parameter handler: Code block to execute
-    //
-    public func startLoop(handler:()->() ) {
-        // trigger =  Int(60 * duration)
-        internalHandler = handler
-        
 
+    
+    private func tickOrTock() {
+        
+        // Just this block runs if there are no accents needed
+        if barArray == nil {
+            
+            akMetronome.clickSampler.playNote(60)
+            return
+        }
+        
+        
+        // a 1 in barArray fires the accent note
+        if barArray![counter] == 1 {
+            
+            akMetronome.accentSampler.playNote(58)
+            
+        } else if barArray![counter] == 0 { // a 0 in barArray fires regular note
+            
+            akMetronome.clickSampler.playNote(60)
+            
+        }
+        
+        
+        // counter to loop through barArray
+        if counter == barArray!.count - 1 {
+            counter = 0
+        } else {
+            counter += 1
+        }
+        
+    }
+    
+    
+    
+    
+    
+    // Starts the clicking
+    public func startLoop() {
         
         dispatch_async(dispatch_get_main_queue()) { () -> Void in
-            self.displayLink = CADisplayLink(target: self, selector: "update:")
+            self.displayLink = CADisplayLink(target: self, selector: "callTickTock:")
             self.displayLink.frameInterval = 1
             self.displayLink.addToRunLoop(NSRunLoop.currentRunLoop(), forMode: NSRunLoopCommonModes)
         }
         
     }
+
     
+
 
     // Stops the clicking
     public func stopLoop() {

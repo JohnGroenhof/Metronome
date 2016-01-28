@@ -8,12 +8,11 @@
 
 import UIKit
 
-
+// TODO: Implement Tick accent/bars into interface
 class ViewController: UIViewController {
     
     // MARK: Constants
-    let metroLoop = MetronomeLoop()
-    let akMetronome = SetupAKMetronome()
+    let metroLoop = MetronomeEngine()
     let maxBPM = 250
     let minBPM = 1
     
@@ -47,7 +46,7 @@ class ViewController: UIViewController {
         
         // Totally guessing here. There's DEFINITELY a better place to clean up
         //     the SetupAKMetronome class.
-        akMetronome.audioKit.stop()
+        metroLoop.akMetronome.audioKit.stop()
         
         // Dispose of any resources that can be recreated.
     }
@@ -118,9 +117,7 @@ class ViewController: UIViewController {
             playState = 1
             
             // Start the metronome
-            metroLoop.startLoop({ () -> () in
-                self.akMetronome.clickSampler.playNote(60)
-            })
+            metroLoop.startLoop()
             
             // Set button title to "Stop"
             startStopOutlet.setTitle("Stop", forState: .Normal)
@@ -136,6 +133,9 @@ class ViewController: UIViewController {
         
         
     }
+
+    
+
     
     
     // Up Button tag is 4

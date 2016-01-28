@@ -17,7 +17,7 @@
 		52FDACB21C50979C00D050E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FDACB01C50979C00D050E6 /* Main.storyboard */; };
 		52FDACB41C50979C00D050E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52FDACB31C50979C00D050E6 /* Assets.xcassets */; };
 		52FDACB71C50979C00D050E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FDACB51C50979C00D050E6 /* LaunchScreen.storyboard */; };
-		52FF31081C57361400E29FF9 /* MetronomeLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF31071C57361400E29FF9 /* MetronomeLoop.swift */; };
+		52FF31081C57361400E29FF9 /* MetronomeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF31071C57361400E29FF9 /* MetronomeEngine.swift */; };
 		52FF310B1C573BD700E29FF9 /* SetupAKMetronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF310A1C573BD700E29FF9 /* SetupAKMetronome.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +47,7 @@
 		52FDACB31C50979C00D050E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52FDACB61C50979C00D050E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52FDACB81C50979C00D050E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52FF31071C57361400E29FF9 /* MetronomeLoop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeLoop.swift; sourceTree = "<group>"; };
+		52FF31071C57361400E29FF9 /* MetronomeEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeEngine.swift; sourceTree = "<group>"; };
 		52FF310A1C573BD700E29FF9 /* SetupAKMetronome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupAKMetronome.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,7 +100,7 @@
 		52FDACAB1C50979C00D050E6 /* Metronome */ = {
 			isa = PBXGroup;
 			children = (
-				52FF31071C57361400E29FF9 /* MetronomeLoop.swift */,
+				52FF31071C57361400E29FF9 /* MetronomeEngine.swift */,
 				52FF310A1C573BD700E29FF9 /* SetupAKMetronome.swift */,
 				52FDACAE1C50979C00D050E6 /* ViewController.swift */,
 				52FDACAC1C50979C00D050E6 /* AppDelegate.swift */,
@@ -193,7 +193,7 @@
 				52FF310B1C573BD700E29FF9 /* SetupAKMetronome.swift in Sources */,
 				52FDACAF1C50979C00D050E6 /* ViewController.swift in Sources */,
 				52FDACAD1C50979C00D050E6 /* AppDelegate.swift in Sources */,
-				52FF31081C57361400E29FF9 /* MetronomeLoop.swift in Sources */,
+				52FF31081C57361400E29FF9 /* MetronomeEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
