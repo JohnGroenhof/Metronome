@@ -18,8 +18,6 @@ import AudioKit
 //    wav files and starts AK.
 public class SetupAKMetronome {
     
-    
-    // let audioKit = AudioKit()
     let clickSampler = AKSampler()
     let accentSampler = AKSampler()
 
