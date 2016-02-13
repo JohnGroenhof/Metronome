@@ -33,7 +33,7 @@ public class SetupAKMetronome {
         
         // Set the sampler mixer to the main audio output
         AudioKit.output = samplerMixer
-        // audioKit.output = samplerMixer
+
         
         AudioKit.start() //Starts AK Engine
         
