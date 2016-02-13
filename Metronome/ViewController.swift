@@ -11,6 +11,8 @@ import UIKit
 // TODO: Implement Tick accent/bars into interface
 class ViewController: UIViewController {
     
+    
+    
     // MARK: Constants
     let metroLoop = MetronomeEngine()
     let maxBPM = 250
@@ -37,7 +39,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         bpm = 80
     }
     
@@ -58,7 +59,7 @@ class ViewController: UIViewController {
     
     // MARK: - FUNCTIONS
 
-    // converts BPM into millisecond double value(seconds)
+    // converts BPM into millisecond double value(actually seconds)
     // 60 = 1.0, 80 = 0.75, etc.
     func bpmInMilliseconds(beats: Int) -> Double {
         

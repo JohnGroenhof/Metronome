@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5272D3FA1C50D392009DF555 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5272D3F91C50D392009DF555 /* AudioKit.framework */; };
 		5272D3FB1C50D392009DF555 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5272D3F91C50D392009DF555 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5272D3FD1C50D4F4009DF555 /* swift-128x128_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5272D3FC1C50D4F4009DF555 /* swift-128x128_2x.png */; };
 		5272D4061C50DCE0009DF555 /* cowbell.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5272D4001C50DCE0009DF555 /* cowbell.wav */; };
 		5272D4071C50DCE0009DF555 /* cowbellaccent.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5272D4011C50DCE0009DF555 /* cowbellaccent.wav */; };
 		52FDACAD1C50979C00D050E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDACAC1C50979C00D050E6 /* AppDelegate.swift */; };
@@ -37,7 +36,6 @@
 
 /* Begin PBXFileReference section */
 		5272D3F91C50D392009DF555 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
-		5272D3FC1C50D4F4009DF555 /* swift-128x128_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "swift-128x128_2x.png"; path = "../swift-128x128_2x.png"; sourceTree = "<group>"; };
 		5272D4001C50DCE0009DF555 /* cowbell.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cowbell.wav; sourceTree = "<group>"; };
 		5272D4011C50DCE0009DF555 /* cowbellaccent.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cowbellaccent.wav; sourceTree = "<group>"; };
 		52FDACA91C50979C00D050E6 /* Metronome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metronome.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,7 +64,6 @@
 		5272D3FE1C50DC5B009DF555 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				5272D3FC1C50D4F4009DF555 /* swift-128x128_2x.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -175,7 +172,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5272D4071C50DCE0009DF555 /* cowbellaccent.wav in Resources */,
-				5272D3FD1C50D4F4009DF555 /* swift-128x128_2x.png in Resources */,
 				52FDACB71C50979C00D050E6 /* LaunchScreen.storyboard in Resources */,
 				5272D4061C50DCE0009DF555 /* cowbell.wav in Resources */,
 				52FDACB41C50979C00D050E6 /* Assets.xcassets in Resources */,
