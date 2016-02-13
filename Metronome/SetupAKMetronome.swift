@@ -18,7 +18,8 @@ import AudioKit
 //    wav files and starts AK.
 public class SetupAKMetronome {
     
-    let audioKit = AKManager.sharedInstance
+    
+    // let audioKit = AudioKit()
     let clickSampler = AKSampler()
     let accentSampler = AKSampler()
 
@@ -31,14 +32,15 @@ public class SetupAKMetronome {
         let samplerMixer = AKMixer(clickSampler, accentSampler)
         
         // Set the sampler mixer to the main audio output
-        audioKit.audioOutput = samplerMixer
+        AudioKit.output = samplerMixer
+        // audioKit.output = samplerMixer
         
-        audioKit.start() //Starts AK Engine
+        AudioKit.start() //Starts AK Engine
         
     }
     
     deinit {
-        audioKit.stop()
+        AudioKit.stop()
     }
   
 }

@@ -45,9 +45,6 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
-        // Totally guessing here. There's DEFINITELY a better place to clean up
-        //     the SetupAKMetronome class.
-        metroLoop.akMetronome.audioKit.stop()
         
         // Dispose of any resources that can be recreated.
     }
