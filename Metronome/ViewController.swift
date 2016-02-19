@@ -14,7 +14,10 @@ class ViewController: UIViewController {
     
     
     // MARK: Constants
-    let metroLoop = MetronomeEngine()
+    // let metroLoop = MetronomeEngine()
+    let avae = AudioEngine()
+    
+    
     let maxBPM = 1000
     let minBPM = 1
     
@@ -29,7 +32,9 @@ class ViewController: UIViewController {
         didSet {
             bpmOutlet.text = String(bpm)
             interval = bpmInMilliseconds(bpm)
-            metroLoop.triggerTime = interval
+            // metroLoop.triggerTime = interval
+            
+            avae.bps = interval
             
             print("\(bpmInMilliseconds(bpm))")
         }
@@ -115,7 +120,8 @@ class ViewController: UIViewController {
             playState = 1
             
             // Start the metronome
-            metroLoop.startLoop()
+            // metroLoop.startLoop()
+            avae.play()
             
             // Set button title to "Stop"
             startStopOutlet.setTitle("Stop", forState: .Normal)
@@ -124,7 +130,9 @@ class ViewController: UIViewController {
             playState = 0
             
             // Stop the metronome
-            metroLoop.stopLoop()
+            // metroLoop.stopLoop()
+            avae.stop()
+            
             // set button title back to "Start"
             startStopOutlet.setTitle("Start", forState: .Normal)
         }

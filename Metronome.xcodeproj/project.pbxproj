@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		5272D4061C50DCE0009DF555 /* cowbell.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5272D4001C50DCE0009DF555 /* cowbell.wav */; };
 		5272D4071C50DCE0009DF555 /* cowbellaccent.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5272D4011C50DCE0009DF555 /* cowbellaccent.wav */; };
+		529F39B31C770B520058B890 /* clavelo.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 529F39B11C770B520058B890 /* clavelo.m4a */; };
+		529F39B41C770B520058B890 /* clavehi.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 529F39B21C770B520058B890 /* clavehi.m4a */; };
+		529F39B61C770B9E0058B890 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529F39B51C770B9E0058B890 /* AudioEngine.swift */; };
 		52FDACAD1C50979C00D050E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDACAC1C50979C00D050E6 /* AppDelegate.swift */; };
 		52FDACAF1C50979C00D050E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDACAE1C50979C00D050E6 /* ViewController.swift */; };
 		52FDACB21C50979C00D050E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FDACB01C50979C00D050E6 /* Main.storyboard */; };
@@ -23,6 +26,9 @@
 		16265004F8BD6B25FCB496F7 /* Pods-Metronome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metronome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Metronome/Pods-Metronome.debug.xcconfig"; sourceTree = "<group>"; };
 		5272D4001C50DCE0009DF555 /* cowbell.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cowbell.wav; sourceTree = "<group>"; };
 		5272D4011C50DCE0009DF555 /* cowbellaccent.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cowbellaccent.wav; sourceTree = "<group>"; };
+		529F39B11C770B520058B890 /* clavelo.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = clavelo.m4a; sourceTree = "<group>"; };
+		529F39B21C770B520058B890 /* clavehi.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = clavehi.m4a; sourceTree = "<group>"; };
+		529F39B51C770B9E0058B890 /* AudioEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
 		52FDACA91C50979C00D050E6 /* Metronome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metronome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FDACAC1C50979C00D050E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52FDACAE1C50979C00D050E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +73,8 @@
 		5272D3FF1C50DCE0009DF555 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				529F39B11C770B520058B890 /* clavelo.m4a */,
+				529F39B21C770B520058B890 /* clavehi.m4a */,
 				5272D4001C50DCE0009DF555 /* cowbell.wav */,
 				5272D4011C50DCE0009DF555 /* cowbellaccent.wav */,
 			);
@@ -94,6 +102,7 @@
 		52FDACAB1C50979C00D050E6 /* Metronome */ = {
 			isa = PBXGroup;
 			children = (
+				529F39B51C770B9E0058B890 /* AudioEngine.swift */,
 				52FF31071C57361400E29FF9 /* MetronomeEngine.swift */,
 				52FF310A1C573BD700E29FF9 /* SetupAKMetronome.swift */,
 				52FDACAE1C50979C00D050E6 /* ViewController.swift */,
@@ -181,6 +190,8 @@
 				5272D4071C50DCE0009DF555 /* cowbellaccent.wav in Resources */,
 				52FDACB71C50979C00D050E6 /* LaunchScreen.storyboard in Resources */,
 				5272D4061C50DCE0009DF555 /* cowbell.wav in Resources */,
+				529F39B41C770B520058B890 /* clavehi.m4a in Resources */,
+				529F39B31C770B520058B890 /* clavelo.m4a in Resources */,
 				52FDACB41C50979C00D050E6 /* Assets.xcassets in Resources */,
 				52FDACB21C50979C00D050E6 /* Main.storyboard in Resources */,
 			);
@@ -243,6 +254,7 @@
 			files = (
 				52FF310B1C573BD700E29FF9 /* SetupAKMetronome.swift in Sources */,
 				52FDACAF1C50979C00D050E6 /* ViewController.swift in Sources */,
+				529F39B61C770B9E0058B890 /* AudioEngine.swift in Sources */,
 				52FDACAD1C50979C00D050E6 /* AppDelegate.swift in Sources */,
 				52FF31081C57361400E29FF9 /* MetronomeEngine.swift in Sources */,
 			);
