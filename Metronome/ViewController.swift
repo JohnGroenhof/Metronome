@@ -61,7 +61,7 @@ class ViewController: UIViewController {
     func bpmInMilliseconds(beats: Int) -> Double {
         
         let ms = (60 / Double(beats))
-        return ms
+        return ms - 0.008
         
     }
     

@@ -58,9 +58,9 @@ public class MetronomeEngine {
         let diff = sender.timestamp - stamp
         
         // tests
-        print("stamp:            \(stamp)")
-        print("sender.timestamp: \(sender.timestamp)")
-        print("diff:             \(diff)")
+//        print("stamp:            \(stamp)")
+//        print("sender.timestamp: \(sender.timestamp)")
+//        print("diff:             \(diff)")
         
         // Checks if the elapsed time is still less than the target interval
         //  and does nothing if it is.

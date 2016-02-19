@@ -69,6 +69,9 @@
                                     <action selector="startStopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xvp-xS-LIx"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zRM-vc-qgE">
+                                <rect key="frame" x="0.0" y="277" width="375" height="216"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
