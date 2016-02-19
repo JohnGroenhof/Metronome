@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
     // MARK: Constants
     let metroLoop = MetronomeEngine()
-    let maxBPM = 250
+    let maxBPM = 1000
     let minBPM = 1
     
     // MARK: Variables
