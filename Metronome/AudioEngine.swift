@@ -73,6 +73,7 @@ class AudioEngine {
         
         fillBarBuffer(Int(fileLo.length))
         startAVAudioEngine()
+
     }
     
     
@@ -97,6 +98,7 @@ class AudioEngine {
         } catch {
             print("Error starting Engine")
         }
+        engine.prepare()
     }
 
 
@@ -127,40 +129,40 @@ class AudioEngine {
         var j = 0 // frame counter
         
         /// Beat ONE
-        for var i in 0..<fileLength {
-            barBuffer1.floatChannelData.memory[j] = sampleBufferLo.floatChannelData.memory[i]
+        for i in 0..<fileLength {
+            barBuffer1.floatChannelData[0][j] = sampleBufferLo.floatChannelData[0][i]
+            barBuffer1.floatChannelData[1][j] = sampleBufferLo.floatChannelData[1][i]
             j += 1
-            i += 1
         }
         j += Int(samplesInSilence)
         
         
         
         /// Beat TWO
-        for var i in 0..<fileLength {
-            barBuffer1.floatChannelData.memory[j] = sampleBufferLo.floatChannelData.memory[i]
+        for i in 0..<fileLength {
+            barBuffer1.floatChannelData[0][j] = sampleBufferLo.floatChannelData[0][i]
+            barBuffer1.floatChannelData[1][j] = sampleBufferLo.floatChannelData[1][i]
             j += 1
-            i += 1
         }
         j += Int(samplesInSilence)
         
         
         
         /// Beat THREE
-        for var i in 0..<fileLength {
-            barBuffer1.floatChannelData.memory[j] = sampleBufferLo.floatChannelData.memory[i]
+        for i in 0..<fileLength {
+            barBuffer1.floatChannelData[0][j] = sampleBufferLo.floatChannelData[0][i]
+            barBuffer1.floatChannelData[1][j] = sampleBufferLo.floatChannelData[1][i]
             j += 1
-            i += 1
         }
         j += Int(samplesInSilence)
         
         
         
         /// Beat FOUR
-        for var i in 0..<fileLength {
-            barBuffer1.floatChannelData.memory[j] = sampleBufferLo.floatChannelData.memory[i]
+        for i in 0..<fileLength {
+            barBuffer1.floatChannelData[0][j] = sampleBufferLo.floatChannelData[0][i]
+            barBuffer1.floatChannelData[1][j] = sampleBufferLo.floatChannelData[1][i]
             j += 1
-            i += 1
         }
         j += Int(samplesInSilence)
         

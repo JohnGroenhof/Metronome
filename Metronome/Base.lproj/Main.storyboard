@@ -16,14 +16,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJt-PV-t8s">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJt-PV-t8s">
                                 <rect key="frame" x="129" y="84" width="117" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="HT7-uU-ugL"/>
+                                    <constraint firstAttribute="width" constant="117" id="QuG-zN-Rjs"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="59"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Metronome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRN-n9-8Da">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Metronome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRN-n9-8Da">
                                 <rect key="frame" x="100" y="28" width="174" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="174" id="UvL-U6-JR5"/>
+                                    <constraint firstAttribute="height" constant="38" id="tOa-X5-KK4"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -53,31 +61,111 @@
                                     <action selector="bpmDownTouchUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="p5V-iP-kg6"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BPM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQX-dC-9g0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BPM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQX-dC-9g0">
                                 <rect key="frame" x="173" y="147" width="28" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="28" id="Tk6-Y5-OR9"/>
+                                    <constraint firstAttribute="height" constant="20" id="rc6-37-4dF"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.97647058819999999" green="0.52941176469999995" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAm-cC-VjV">
-                                <rect key="frame" x="165" y="185" width="45" height="26"/>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zRM-vc-qgE">
+                                <rect key="frame" x="0.0" y="443" width="375" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yb-9q-hP5">
+                                <rect key="frame" x="150" y="247" width="74" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="3UV-qa-EIb"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Hab-K7-WxO"/>
+                                    <constraint firstAttribute="width" constant="74" id="Ivg-Dp-3RZ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="74" id="TJ1-RF-4JU"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="del-Zb-xh6"/>
+                                    <constraint firstAttribute="height" constant="30" id="wSE-bw-Nwb"/>
+                                </constraints>
+                                <state key="normal" title="Accent Off">
+                                    <color key="titleColor" red="1" green="0.24288470640000001" blue="0.1563789143" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3UV-qa-EIb"/>
+                                        <exclude reference="Hab-K7-WxO"/>
+                                        <exclude reference="wSE-bw-Nwb"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="AccentToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wQ3-k9-aI4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3g-6b-fKn">
+                                <rect key="frame" x="173" y="309" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1eh-hY-RHb"/>
+                                    <constraint firstAttribute="width" constant="30" id="hNG-0e-SE1"/>
+                                </constraints>
+                                <state key="normal" title="4/4">
+                                    <color key="titleColor" red="1" green="0.24288470640000001" blue="0.1563789143" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="meterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TBX-Cw-W4L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAm-cC-VjV">
+                                <rect key="frame" x="165" y="196" width="45" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="1Jd-XU-MkA"/>
+                                    <constraint firstAttribute="width" constant="45" id="1uA-Vb-CBO"/>
+                                    <constraint firstAttribute="width" constant="45" id="H1N-eD-xGc"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="26" id="Hn3-CQ-wEb"/>
+                                    <constraint firstAttribute="height" constant="26" id="N6y-gb-BZK"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" id="aJY-OU-Q9Y"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Start">
                                     <color key="titleColor" red="1" green="0.24288470640000001" blue="0.1563789143" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1Jd-XU-MkA"/>
+                                        <exclude reference="1uA-Vb-CBO"/>
+                                        <exclude reference="Hn3-CQ-wEb"/>
+                                        <exclude reference="aJY-OU-Q9Y"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="startStopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xvp-xS-LIx"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zRM-vc-qgE">
-                                <rect key="frame" x="0.0" y="277" width="375" height="216"/>
-                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4yb-9q-hP5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3H4-bK-m0J"/>
+                            <constraint firstItem="WQX-dC-9g0" firstAttribute="top" secondItem="DJt-PV-t8s" secondAttribute="bottom" constant="1" id="OMU-F3-LVu"/>
+                            <constraint firstItem="pAm-cC-VjV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QXt-pL-5fF"/>
+                            <constraint firstItem="JRN-n9-8Da" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Zsp-MU-TnW"/>
+                            <constraint firstItem="pAm-cC-VjV" firstAttribute="top" secondItem="WQX-dC-9g0" secondAttribute="bottom" constant="29" id="a5L-Bs-RZv"/>
+                            <constraint firstItem="4yb-9q-hP5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bPZ-C2-ozN"/>
+                            <constraint firstItem="JRN-n9-8Da" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bYs-yH-vJE"/>
+                            <constraint firstItem="WQX-dC-9g0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f4r-IH-rYN"/>
+                            <constraint firstItem="DJt-PV-t8s" firstAttribute="top" secondItem="JRN-n9-8Da" secondAttribute="bottom" constant="18" id="geB-vn-fxk"/>
+                            <constraint firstItem="4yb-9q-hP5" firstAttribute="top" secondItem="pAm-cC-VjV" secondAttribute="bottom" constant="25" id="k4f-mV-Mm5"/>
+                            <constraint firstItem="DJt-PV-t8s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mCu-Ns-z6o"/>
+                            <constraint firstItem="s3g-6b-fKn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mfB-X6-pN5"/>
+                            <constraint firstItem="s3g-6b-fKn" firstAttribute="top" secondItem="4yb-9q-hP5" secondAttribute="bottom" constant="32" id="tmN-9K-pMG"/>
+                            <constraint firstItem="4yb-9q-hP5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w5R-Uy-ogI"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3H4-bK-m0J"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="accentToggleOutlet" destination="4yb-9q-hP5" id="8An-ie-IzP"/>
                         <outlet property="bpmOutlet" destination="DJt-PV-t8s" id="Scq-h9-HnF"/>
+                        <outlet property="meterButtonOutlet" destination="s3g-6b-fKn" id="vM5-oy-zFe"/>
                         <outlet property="startStopOutlet" destination="pAm-cC-VjV" id="Rnn-Ac-bkT"/>
                     </connections>
                 </viewController>
