@@ -15,9 +15,17 @@ class BarInfo {
     var timeSignatureDenom: Int
     var noteSubdivision: Int
     
-    var clickFileString: String // "CLAV1_p25"
-    var accentFileString: String // "CLAV2_p25"
     
+    
+    var audioFileArr = AudioFiles.clave1Arr
+    var accentFileString:   String { return audioFileArr[0].fileName }
+    var clickFileString:    String { return audioFileArr[1].fileName }
+    
+    
+    // Accent array values:
+    // 0 - mute
+    // 1 - click
+    // 2 - accent
     var accentArray:[Int]?
     
     // Number of MIDI Instrument tracks. The midi file will have
@@ -44,20 +52,16 @@ class BarInfo {
             return name
         }
     }
-    
-    
+
     
     init (timeSigNumer: Int, timeSigDenom: Int, subdivision: Int) {
         
         timeSignatureNumer = timeSigNumer
         timeSignatureDenom = timeSigDenom
         noteSubdivision = subdivision
-        
-        clickFileString = Files.Audio.clave1Lo
-        accentFileString = Files.Audio.clave1Hi
-        
-        accentArray = Array(count: timeSignatureNumer, repeatedValue: 0)
-        accentArray![0] = 1
+
+        accentArray = Array(count: timeSignatureNumer, repeatedValue: 1)
+        accentArray![0] = 2
         
     }
     
@@ -69,8 +73,8 @@ class BarInfo {
         
         accentArray = nil
         
-        accentArray = Array(count: timeSignatureNumer, repeatedValue: 0)
-        accentArray![0] = 1
+        accentArray = Array(count: timeSignatureNumer, repeatedValue: 1)
+        accentArray![0] = 2
         
         
     }

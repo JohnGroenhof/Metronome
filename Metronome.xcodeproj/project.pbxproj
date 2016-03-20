@@ -8,17 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		522867F81C9BB71D009ADD22 /* Sequencer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522867F71C9BB71D009ADD22 /* Sequencer.swift */; };
-		522867FC1C9BB8F0009ADD22 /* 4460multitempo.mid in Resources */ = {isa = PBXBuildFile; fileRef = 522867FA1C9BB8F0009ADD22 /* 4460multitempo.mid */; };
-		522867FD1C9BB8F0009ADD22 /* 4460multitempoaccent.mid in Resources */ = {isa = PBXBuildFile; fileRef = 522867FB1C9BB8F0009ADD22 /* 4460multitempoaccent.mid */; };
-		522FB4921C9C68A8000636B1 /* 5460.5track.mid in Resources */ = {isa = PBXBuildFile; fileRef = 522FB4911C9C68A8000636B1 /* 5460.5track.mid */; };
+		524967891C9E2BEB00CD58A8 /* bongo1hi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 524967751C9E2BEB00CD58A8 /* bongo1hi.wav */; };
+		5249678A1C9E2BEB00CD58A8 /* bongo1lo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 524967761C9E2BEB00CD58A8 /* bongo1lo.wav */; };
+		5249678B1C9E2BEB00CD58A8 /* clap1hi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 524967771C9E2BEB00CD58A8 /* clap1hi.wav */; };
+		5249678C1C9E2BEB00CD58A8 /* clap1lo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 524967781C9E2BEB00CD58A8 /* clap1lo.wav */; };
+		5249678D1C9E2BEB00CD58A8 /* clave1hi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 524967791C9E2BEB00CD58A8 /* clave1hi.wav */; };
+		5249678E1C9E2BEB00CD58A8 /* clave1lo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5249677A1C9E2BEB00CD58A8 /* clave1lo.wav */; };
+		5249678F1C9E2BEB00CD58A8 /* clave2hi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5249677B1C9E2BEB00CD58A8 /* clave2hi.wav */; };
+		524967901C9E2BEB00CD58A8 /* clave2lo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5249677C1C9E2BEB00CD58A8 /* clave2lo.wav */; };
+		524967911C9E2BEB00CD58A8 /* digital1hi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5249677D1C9E2BEB00CD58A8 /* digital1hi.wav */; };
+		524967921C9E2BEB00CD58A8 /* digital2hi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5249677E1C9E2BEB00CD58A8 /* digital2hi.wav */; };
+		524967931C9E2BEB00CD58A8 /* digital2lo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5249677F1C9E2BEB00CD58A8 /* digital2lo.wav */; };
+		524967941C9E2BEB00CD58A8 /* digital3hi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 524967801C9E2BEB00CD58A8 /* digital3hi.wav */; };
+		524967951C9E2BEB00CD58A8 /* digital3lo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 524967811C9E2BEB00CD58A8 /* digital3lo.wav */; };
+		524967961C9E2BEB00CD58A8 /* digital1lo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 524967821C9E2BEB00CD58A8 /* digital1lo.wav */; };
+		524967971C9E2BEB00CD58A8 /* djembe1hi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 524967831C9E2BEB00CD58A8 /* djembe1hi.wav */; };
+		524967981C9E2BEB00CD58A8 /* djembe1lo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 524967841C9E2BEB00CD58A8 /* djembe1lo.wav */; };
+		524967991C9E2BEB00CD58A8 /* perc1hi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 524967851C9E2BEB00CD58A8 /* perc1hi.wav */; };
+		5249679A1C9E2BEB00CD58A8 /* perc1lo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 524967861C9E2BEB00CD58A8 /* perc1lo.wav */; };
+		5249679B1C9E2BEB00CD58A8 /* stab1hi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 524967871C9E2BEB00CD58A8 /* stab1hi.wav */; };
+		5249679C1C9E2BEB00CD58A8 /* stab1lo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 524967881C9E2BEB00CD58A8 /* stab1lo.wav */; };
+		524967A81C9E2D0500CD58A8 /* 3.4.4.3.mid in Resources */ = {isa = PBXBuildFile; fileRef = 5249679D1C9E2D0500CD58A8 /* 3.4.4.3.mid */; };
+		524967A91C9E2D0500CD58A8 /* 3.4.8.6.mid in Resources */ = {isa = PBXBuildFile; fileRef = 5249679E1C9E2D0500CD58A8 /* 3.4.8.6.mid */; };
+		524967AA1C9E2D0500CD58A8 /* 3.8.8.3.mid in Resources */ = {isa = PBXBuildFile; fileRef = 5249679F1C9E2D0500CD58A8 /* 3.8.8.3.mid */; };
+		524967AB1C9E2D0500CD58A8 /* 5.4.8.10.mid in Resources */ = {isa = PBXBuildFile; fileRef = 524967A01C9E2D0500CD58A8 /* 5.4.8.10.mid */; };
+		524967AC1C9E2D0500CD58A8 /* 5.8.8.5.mid in Resources */ = {isa = PBXBuildFile; fileRef = 524967A11C9E2D0500CD58A8 /* 5.8.8.5.mid */; };
+		524967AD1C9E2D0500CD58A8 /* 6.4.4.6.mid in Resources */ = {isa = PBXBuildFile; fileRef = 524967A21C9E2D0500CD58A8 /* 6.4.4.6.mid */; };
+		524967AE1C9E2D0500CD58A8 /* 6.4.8.12.mid in Resources */ = {isa = PBXBuildFile; fileRef = 524967A31C9E2D0500CD58A8 /* 6.4.8.12.mid */; };
+		524967AF1C9E2D0500CD58A8 /* 6.8.8.6.mid in Resources */ = {isa = PBXBuildFile; fileRef = 524967A41C9E2D0500CD58A8 /* 6.8.8.6.mid */; };
+		524967B01C9E2D0500CD58A8 /* 7.4.4.7.mid in Resources */ = {isa = PBXBuildFile; fileRef = 524967A51C9E2D0500CD58A8 /* 7.4.4.7.mid */; };
+		524967B11C9E2D0500CD58A8 /* 7.4.8.14.mid in Resources */ = {isa = PBXBuildFile; fileRef = 524967A61C9E2D0500CD58A8 /* 7.4.8.14.mid */; };
+		524967B21C9E2D0500CD58A8 /* 9.8.8.9.mid in Resources */ = {isa = PBXBuildFile; fileRef = 524967A71C9E2D0500CD58A8 /* 9.8.8.9.mid */; };
 		525576871C993AC000DA0073 /* MachEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525576861C993AC000DA0073 /* MachEngine.swift */; };
-		52623A681C9BD67600E2CD1C /* 4460.4track.mid in Resources */ = {isa = PBXBuildFile; fileRef = 52623A671C9BD67600E2CD1C /* 4460.4track.mid */; };
-		52623A6D1C9BE98300E2CD1C /* CLAV1_p25.wav in Resources */ = {isa = PBXBuildFile; fileRef = 52623A691C9BE98300E2CD1C /* CLAV1_p25.wav */; };
-		52623A6E1C9BE98300E2CD1C /* CLAV2_p25.wav in Resources */ = {isa = PBXBuildFile; fileRef = 52623A6A1C9BE98300E2CD1C /* CLAV2_p25.wav */; };
-		52623A6F1C9BE98300E2CD1C /* clavehifix.wav in Resources */ = {isa = PBXBuildFile; fileRef = 52623A6B1C9BE98300E2CD1C /* clavehifix.wav */; };
-		52623A701C9BE98300E2CD1C /* clavelofix.wav in Resources */ = {isa = PBXBuildFile; fileRef = 52623A6C1C9BE98300E2CD1C /* clavelofix.wav */; };
-		5272D4061C50DCE0009DF555 /* cowbell.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5272D4001C50DCE0009DF555 /* cowbell.wav */; };
-		5272D4071C50DCE0009DF555 /* cowbellaccent.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5272D4011C50DCE0009DF555 /* cowbellaccent.wav */; };
+		528936541C9E43A400DABF21 /* AudioFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528936531C9E43A400DABF21 /* AudioFiles.swift */; };
 		529F39B61C770B9E0058B890 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529F39B51C770B9E0058B890 /* AudioEngine.swift */; };
 		52F916B01C9D084C00EE59A3 /* 4.4.8.8.mid in Resources */ = {isa = PBXBuildFile; fileRef = 52F916AE1C9D084C00EE59A3 /* 4.4.8.8.mid */; };
 		52F916B11C9D084C00EE59A3 /* 7.8.8.7.mid in Resources */ = {isa = PBXBuildFile; fileRef = 52F916AF1C9D084C00EE59A3 /* 7.8.8.7.mid */; };
@@ -38,17 +60,39 @@
 /* Begin PBXFileReference section */
 		16265004F8BD6B25FCB496F7 /* Pods-Metronome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metronome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Metronome/Pods-Metronome.debug.xcconfig"; sourceTree = "<group>"; };
 		522867F71C9BB71D009ADD22 /* Sequencer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sequencer.swift; sourceTree = "<group>"; };
-		522867FA1C9BB8F0009ADD22 /* 4460multitempo.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = 4460multitempo.mid; sourceTree = "<group>"; };
-		522867FB1C9BB8F0009ADD22 /* 4460multitempoaccent.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = 4460multitempoaccent.mid; sourceTree = "<group>"; };
-		522FB4911C9C68A8000636B1 /* 5460.5track.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = 5460.5track.mid; sourceTree = "<group>"; };
+		524967751C9E2BEB00CD58A8 /* bongo1hi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bongo1hi.wav; sourceTree = "<group>"; };
+		524967761C9E2BEB00CD58A8 /* bongo1lo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bongo1lo.wav; sourceTree = "<group>"; };
+		524967771C9E2BEB00CD58A8 /* clap1hi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clap1hi.wav; sourceTree = "<group>"; };
+		524967781C9E2BEB00CD58A8 /* clap1lo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clap1lo.wav; sourceTree = "<group>"; };
+		524967791C9E2BEB00CD58A8 /* clave1hi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clave1hi.wav; sourceTree = "<group>"; };
+		5249677A1C9E2BEB00CD58A8 /* clave1lo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clave1lo.wav; sourceTree = "<group>"; };
+		5249677B1C9E2BEB00CD58A8 /* clave2hi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clave2hi.wav; sourceTree = "<group>"; };
+		5249677C1C9E2BEB00CD58A8 /* clave2lo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clave2lo.wav; sourceTree = "<group>"; };
+		5249677D1C9E2BEB00CD58A8 /* digital1hi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = digital1hi.wav; sourceTree = "<group>"; };
+		5249677E1C9E2BEB00CD58A8 /* digital2hi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = digital2hi.wav; sourceTree = "<group>"; };
+		5249677F1C9E2BEB00CD58A8 /* digital2lo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = digital2lo.wav; sourceTree = "<group>"; };
+		524967801C9E2BEB00CD58A8 /* digital3hi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = digital3hi.wav; sourceTree = "<group>"; };
+		524967811C9E2BEB00CD58A8 /* digital3lo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = digital3lo.wav; sourceTree = "<group>"; };
+		524967821C9E2BEB00CD58A8 /* digital1lo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = digital1lo.wav; sourceTree = "<group>"; };
+		524967831C9E2BEB00CD58A8 /* djembe1hi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = djembe1hi.wav; sourceTree = "<group>"; };
+		524967841C9E2BEB00CD58A8 /* djembe1lo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = djembe1lo.wav; sourceTree = "<group>"; };
+		524967851C9E2BEB00CD58A8 /* perc1hi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = perc1hi.wav; sourceTree = "<group>"; };
+		524967861C9E2BEB00CD58A8 /* perc1lo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = perc1lo.wav; sourceTree = "<group>"; };
+		524967871C9E2BEB00CD58A8 /* stab1hi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = stab1hi.wav; sourceTree = "<group>"; };
+		524967881C9E2BEB00CD58A8 /* stab1lo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = stab1lo.wav; sourceTree = "<group>"; };
+		5249679D1C9E2D0500CD58A8 /* 3.4.4.3.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = 3.4.4.3.mid; sourceTree = "<group>"; };
+		5249679E1C9E2D0500CD58A8 /* 3.4.8.6.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = 3.4.8.6.mid; sourceTree = "<group>"; };
+		5249679F1C9E2D0500CD58A8 /* 3.8.8.3.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = 3.8.8.3.mid; sourceTree = "<group>"; };
+		524967A01C9E2D0500CD58A8 /* 5.4.8.10.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = 5.4.8.10.mid; sourceTree = "<group>"; };
+		524967A11C9E2D0500CD58A8 /* 5.8.8.5.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = 5.8.8.5.mid; sourceTree = "<group>"; };
+		524967A21C9E2D0500CD58A8 /* 6.4.4.6.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = 6.4.4.6.mid; sourceTree = "<group>"; };
+		524967A31C9E2D0500CD58A8 /* 6.4.8.12.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = 6.4.8.12.mid; sourceTree = "<group>"; };
+		524967A41C9E2D0500CD58A8 /* 6.8.8.6.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = 6.8.8.6.mid; sourceTree = "<group>"; };
+		524967A51C9E2D0500CD58A8 /* 7.4.4.7.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = 7.4.4.7.mid; sourceTree = "<group>"; };
+		524967A61C9E2D0500CD58A8 /* 7.4.8.14.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = 7.4.8.14.mid; sourceTree = "<group>"; };
+		524967A71C9E2D0500CD58A8 /* 9.8.8.9.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = 9.8.8.9.mid; sourceTree = "<group>"; };
 		525576861C993AC000DA0073 /* MachEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MachEngine.swift; sourceTree = "<group>"; };
-		52623A671C9BD67600E2CD1C /* 4460.4track.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = 4460.4track.mid; sourceTree = "<group>"; };
-		52623A691C9BE98300E2CD1C /* CLAV1_p25.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = CLAV1_p25.wav; sourceTree = "<group>"; };
-		52623A6A1C9BE98300E2CD1C /* CLAV2_p25.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = CLAV2_p25.wav; sourceTree = "<group>"; };
-		52623A6B1C9BE98300E2CD1C /* clavehifix.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clavehifix.wav; sourceTree = "<group>"; };
-		52623A6C1C9BE98300E2CD1C /* clavelofix.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clavelofix.wav; sourceTree = "<group>"; };
-		5272D4001C50DCE0009DF555 /* cowbell.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cowbell.wav; sourceTree = "<group>"; };
-		5272D4011C50DCE0009DF555 /* cowbellaccent.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cowbellaccent.wav; sourceTree = "<group>"; };
+		528936531C9E43A400DABF21 /* AudioFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioFiles.swift; sourceTree = "<group>"; };
 		529F39B51C770B9E0058B890 /* AudioEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
 		52F916AE1C9D084C00EE59A3 /* 4.4.8.8.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = 4.4.8.8.mid; sourceTree = "<group>"; };
 		52F916AF1C9D084C00EE59A3 /* 7.8.8.7.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = 7.8.8.7.mid; sourceTree = "<group>"; };
@@ -93,14 +137,21 @@
 		522867F91C9BB8F0009ADD22 /* midi */ = {
 			isa = PBXGroup;
 			children = (
-				522FB4911C9C68A8000636B1 /* 5460.5track.mid */,
-				522867FA1C9BB8F0009ADD22 /* 4460multitempo.mid */,
+				5249679D1C9E2D0500CD58A8 /* 3.4.4.3.mid */,
+				5249679E1C9E2D0500CD58A8 /* 3.4.8.6.mid */,
+				5249679F1C9E2D0500CD58A8 /* 3.8.8.3.mid */,
+				524967A01C9E2D0500CD58A8 /* 5.4.8.10.mid */,
+				524967A11C9E2D0500CD58A8 /* 5.8.8.5.mid */,
+				524967A21C9E2D0500CD58A8 /* 6.4.4.6.mid */,
+				524967A31C9E2D0500CD58A8 /* 6.4.8.12.mid */,
+				524967A41C9E2D0500CD58A8 /* 6.8.8.6.mid */,
+				524967A51C9E2D0500CD58A8 /* 7.4.4.7.mid */,
+				524967A61C9E2D0500CD58A8 /* 7.4.8.14.mid */,
+				524967A71C9E2D0500CD58A8 /* 9.8.8.9.mid */,
 				52F916AE1C9D084C00EE59A3 /* 4.4.8.8.mid */,
 				52F916B21C9D088600EE59A3 /* 4.4.4.4.mid */,
 				52F916B31C9D088600EE59A3 /* 5.4.4.5.mid */,
 				52F916AF1C9D084C00EE59A3 /* 7.8.8.7.mid */,
-				522867FB1C9BB8F0009ADD22 /* 4460multitempoaccent.mid */,
-				52623A671C9BD67600E2CD1C /* 4460.4track.mid */,
 			);
 			path = midi;
 			sourceTree = "<group>";
@@ -115,14 +166,39 @@
 		5272D3FF1C50DCE0009DF555 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				52623A691C9BE98300E2CD1C /* CLAV1_p25.wav */,
-				52623A6A1C9BE98300E2CD1C /* CLAV2_p25.wav */,
-				52623A6B1C9BE98300E2CD1C /* clavehifix.wav */,
-				52623A6C1C9BE98300E2CD1C /* clavelofix.wav */,
-				5272D4001C50DCE0009DF555 /* cowbell.wav */,
-				5272D4011C50DCE0009DF555 /* cowbellaccent.wav */,
+				524967751C9E2BEB00CD58A8 /* bongo1hi.wav */,
+				524967761C9E2BEB00CD58A8 /* bongo1lo.wav */,
+				524967771C9E2BEB00CD58A8 /* clap1hi.wav */,
+				524967781C9E2BEB00CD58A8 /* clap1lo.wav */,
+				524967791C9E2BEB00CD58A8 /* clave1hi.wav */,
+				5249677A1C9E2BEB00CD58A8 /* clave1lo.wav */,
+				5249677B1C9E2BEB00CD58A8 /* clave2hi.wav */,
+				5249677C1C9E2BEB00CD58A8 /* clave2lo.wav */,
+				5249677D1C9E2BEB00CD58A8 /* digital1hi.wav */,
+				5249677E1C9E2BEB00CD58A8 /* digital2hi.wav */,
+				5249677F1C9E2BEB00CD58A8 /* digital2lo.wav */,
+				524967801C9E2BEB00CD58A8 /* digital3hi.wav */,
+				524967811C9E2BEB00CD58A8 /* digital3lo.wav */,
+				524967821C9E2BEB00CD58A8 /* digital1lo.wav */,
+				524967831C9E2BEB00CD58A8 /* djembe1hi.wav */,
+				524967841C9E2BEB00CD58A8 /* djembe1lo.wav */,
+				524967851C9E2BEB00CD58A8 /* perc1hi.wav */,
+				524967861C9E2BEB00CD58A8 /* perc1lo.wav */,
+				524967871C9E2BEB00CD58A8 /* stab1hi.wav */,
+				524967881C9E2BEB00CD58A8 /* stab1lo.wav */,
 			);
 			path = Audio;
+			sourceTree = "<group>";
+		};
+		52F916B91C9DD30000EE59A3 /* OldClasses */ = {
+			isa = PBXGroup;
+			children = (
+				52FF310A1C573BD700E29FF9 /* SetupAKMetronome.swift */,
+				52FF31071C57361400E29FF9 /* MetronomeEngine.swift */,
+				525576861C993AC000DA0073 /* MachEngine.swift */,
+				529F39B51C770B9E0058B890 /* AudioEngine.swift */,
+			);
+			name = OldClasses;
 			sourceTree = "<group>";
 		};
 		52FDACA01C50979C00D050E6 = {
@@ -146,16 +222,14 @@
 		52FDACAB1C50979C00D050E6 /* Metronome */ = {
 			isa = PBXGroup;
 			children = (
-				52F916B61C9D0B1B00EE59A3 /* BarInfo.playground */,
-				529F39B51C770B9E0058B890 /* AudioEngine.swift */,
-				525576861C993AC000DA0073 /* MachEngine.swift */,
+				528936531C9E43A400DABF21 /* AudioFiles.swift */,
 				522867F71C9BB71D009ADD22 /* Sequencer.swift */,
 				52F916B71C9D52C700EE59A3 /* BarInfo.swift */,
-				52FF31071C57361400E29FF9 /* MetronomeEngine.swift */,
-				52FF310A1C573BD700E29FF9 /* SetupAKMetronome.swift */,
 				52FDACAE1C50979C00D050E6 /* ViewController.swift */,
 				52FDACAC1C50979C00D050E6 /* AppDelegate.swift */,
 				52FDACB01C50979C00D050E6 /* Main.storyboard */,
+				52F916B61C9D0B1B00EE59A3 /* BarInfo.playground */,
+				52F916B91C9DD30000EE59A3 /* OldClasses */,
 				52FDACB31C50979C00D050E6 /* Assets.xcassets */,
 				52FDACB51C50979C00D050E6 /* LaunchScreen.storyboard */,
 				52FDACB81C50979C00D050E6 /* Info.plist */,
@@ -236,23 +310,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52623A6F1C9BE98300E2CD1C /* clavehifix.wav in Resources */,
-				522867FC1C9BB8F0009ADD22 /* 4460multitempo.mid in Resources */,
-				522867FD1C9BB8F0009ADD22 /* 4460multitempoaccent.mid in Resources */,
-				5272D4071C50DCE0009DF555 /* cowbellaccent.wav in Resources */,
+				524967B11C9E2D0500CD58A8 /* 7.4.8.14.mid in Resources */,
+				524967941C9E2BEB00CD58A8 /* digital3hi.wav in Resources */,
 				52FDACB71C50979C00D050E6 /* LaunchScreen.storyboard in Resources */,
-				5272D4061C50DCE0009DF555 /* cowbell.wav in Resources */,
-				52623A701C9BE98300E2CD1C /* clavelofix.wav in Resources */,
-				52623A681C9BD67600E2CD1C /* 4460.4track.mid in Resources */,
+				524967951C9E2BEB00CD58A8 /* digital3lo.wav in Resources */,
+				5249679B1C9E2BEB00CD58A8 /* stab1hi.wav in Resources */,
+				524967A91C9E2D0500CD58A8 /* 3.4.8.6.mid in Resources */,
+				5249679A1C9E2BEB00CD58A8 /* perc1lo.wav in Resources */,
+				5249678D1C9E2BEB00CD58A8 /* clave1hi.wav in Resources */,
+				524967B01C9E2D0500CD58A8 /* 7.4.4.7.mid in Resources */,
+				5249678F1C9E2BEB00CD58A8 /* clave2hi.wav in Resources */,
 				52F916B11C9D084C00EE59A3 /* 7.8.8.7.mid in Resources */,
+				5249678E1C9E2BEB00CD58A8 /* clave1lo.wav in Resources */,
 				52F916B51C9D088600EE59A3 /* 5.4.4.5.mid in Resources */,
-				52623A6D1C9BE98300E2CD1C /* CLAV1_p25.wav in Resources */,
 				52FDACB41C50979C00D050E6 /* Assets.xcassets in Resources */,
-				522FB4921C9C68A8000636B1 /* 5460.5track.mid in Resources */,
+				524967AB1C9E2D0500CD58A8 /* 5.4.8.10.mid in Resources */,
+				524967B21C9E2D0500CD58A8 /* 9.8.8.9.mid in Resources */,
+				524967981C9E2BEB00CD58A8 /* djembe1lo.wav in Resources */,
+				524967931C9E2BEB00CD58A8 /* digital2lo.wav in Resources */,
+				524967911C9E2BEB00CD58A8 /* digital1hi.wav in Resources */,
+				5249678A1C9E2BEB00CD58A8 /* bongo1lo.wav in Resources */,
+				5249678C1C9E2BEB00CD58A8 /* clap1lo.wav in Resources */,
+				524967AD1C9E2D0500CD58A8 /* 6.4.4.6.mid in Resources */,
+				524967921C9E2BEB00CD58A8 /* digital2hi.wav in Resources */,
 				52F916B01C9D084C00EE59A3 /* 4.4.8.8.mid in Resources */,
 				52F916B41C9D088600EE59A3 /* 4.4.4.4.mid in Resources */,
+				524967961C9E2BEB00CD58A8 /* digital1lo.wav in Resources */,
+				524967AE1C9E2D0500CD58A8 /* 6.4.8.12.mid in Resources */,
 				52FDACB21C50979C00D050E6 /* Main.storyboard in Resources */,
-				52623A6E1C9BE98300E2CD1C /* CLAV2_p25.wav in Resources */,
+				524967AC1C9E2D0500CD58A8 /* 5.8.8.5.mid in Resources */,
+				524967AF1C9E2D0500CD58A8 /* 6.8.8.6.mid in Resources */,
+				524967991C9E2BEB00CD58A8 /* perc1hi.wav in Resources */,
+				524967971C9E2BEB00CD58A8 /* djembe1hi.wav in Resources */,
+				524967A81C9E2D0500CD58A8 /* 3.4.4.3.mid in Resources */,
+				524967891C9E2BEB00CD58A8 /* bongo1hi.wav in Resources */,
+				5249679C1C9E2BEB00CD58A8 /* stab1lo.wav in Resources */,
+				524967AA1C9E2D0500CD58A8 /* 3.8.8.3.mid in Resources */,
+				524967901C9E2BEB00CD58A8 /* clave2lo.wav in Resources */,
+				5249678B1C9E2BEB00CD58A8 /* clap1hi.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +411,7 @@
 				52FF310B1C573BD700E29FF9 /* SetupAKMetronome.swift in Sources */,
 				522867F81C9BB71D009ADD22 /* Sequencer.swift in Sources */,
 				52FDACAF1C50979C00D050E6 /* ViewController.swift in Sources */,
+				528936541C9E43A400DABF21 /* AudioFiles.swift in Sources */,
 				529F39B61C770B9E0058B890 /* AudioEngine.swift in Sources */,
 				52FDACAD1C50979C00D050E6 /* AppDelegate.swift in Sources */,
 				52FF31081C57361400E29FF9 /* MetronomeEngine.swift in Sources */,

@@ -9,19 +9,6 @@
 import Foundation
 import AudioKit
 
-struct Files {
-    
-    struct Audio {
-        static let clave1Hi =  "CLAV2_p25"
-        static let clave1Lo =  "CLAV1_p25"
-        
-        static let clave2Hi =  "clavehifix"
-        static let clave2Lo =  "clavelofix"
-        
-        static let cowbellHi = "cowbelaccent"
-        static let cowbellLo = "cowbell"
-    }
-}
 
 
 
@@ -54,7 +41,7 @@ class Sequencer {
     }
     
     deinit {
-        AudioKit.stop()
+        AKStop()
     }
     
     
@@ -88,9 +75,9 @@ class Sequencer {
         for i in bar.accentArray! {
             
             print(i)
-            if i == 1 {
+            if i == 2 {
                 clickSamplerArray![j].loadWav(bar.accentFileString)
-            } else if i == 0 {
+            } else if i == 1 {
                 clickSamplerArray![j].loadWav(bar.clickFileString)
             }
             
@@ -187,6 +174,29 @@ class Sequencer {
 
     
     // MARK: - Methods
+
+    func play() {
+        
+        sequencer!.play()
+    }
+    
+    func stop() {
+        
+        sequencer!.stop()
+    }
+    
+    func setBPM(beats: Int) {
+        
+        rate = Float(beats) / Float(60)
+        sequencer!.setRate(rate)
+    }
+    
+    func changeAudioFiles(audioFileArray: [(name: String, fileName: String)]) {
+        
+        bar.audioFileArr = audioFileArray
+        loadSamplesIntoSampler()
+        
+    }
     
     func changeTimeSignature(bar: BarInfo) {
         
@@ -199,29 +209,6 @@ class Sequencer {
         connectSamplerNodesToSequencerTracks()
         
         AKStart()
-        
-        
-    }
-
-    
-    func play() {
-        
-        sequencer!.play()
-    }
-    
-    
-    func stop() {
-        
-        sequencer!.stop()
-    }
-    
-    
-    func setBPM(beats: Int) {
-        
-        rate = Float(beats) / Float(60)
-        
-        sequencer!.setRate(rate)
-        
         
     }
     
