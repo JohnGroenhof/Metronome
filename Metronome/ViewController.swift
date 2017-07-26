@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     // MARK: Variables
     var interval = 0.0
     var playState = 0
-    var timer: NSTimer!
+    var timer: Timer!
     
     var bpm: Int = 80 {
         
@@ -58,7 +58,7 @@ class ViewController: UIViewController {
 
     // converts BPM into millisecond double value(actually seconds)
     // 60 = 1.0, 80 = 0.75, etc.
-    func bpmInMilliseconds(beats: Int) -> Double {
+    func bpmInMilliseconds(_ beats: Int) -> Double {
         
         let ms = (60 / Double(beats))
         return ms
@@ -66,21 +66,21 @@ class ViewController: UIViewController {
     }
     
     // Function for tap and hold on bpm +/- buttons
-    func bpmHold(sender: AnyObject) {
+    func bpmHold(_ sender: AnyObject) {
         
         if sender.tag == 4 { //sender.tag = 4 is UP BUTTON
             if bpm < maxBPM { bpm += 1 }
-            timer = NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: "rapidUp", userInfo: nil, repeats: true)
+            timer = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(ViewController.rapidUp), userInfo: nil, repeats: true)
         }
         else if sender.tag == 3 { //sender.tag = 3 is DOWN BUTTON
             if bpm > minBPM { bpm -= 1 }
-            timer = NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: "rapidDown", userInfo: nil, repeats: true)
+            timer = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(ViewController.rapidDown), userInfo: nil, repeats: true)
         }
         
     }
     
     // fires every time a bpm button is released (inside or out)
-    func bpmRelease(sender: AnyObject) {
+    func bpmRelease(_ sender: AnyObject) {
         timer.invalidate()
     }
     
@@ -108,7 +108,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var startStopOutlet: UIButton!
 
-    @IBAction func startStopButton(sender: AnyObject) {
+    @IBAction func startStopButton(_ sender: AnyObject) {
         
         // Checks if the metronome is already playing or not, then starts or stops it.
         if playState == 0 {
@@ -118,7 +118,7 @@ class ViewController: UIViewController {
             metroLoop.startLoop()
             
             // Set button title to "Stop"
-            startStopOutlet.setTitle("Stop", forState: .Normal)
+            startStopOutlet.setTitle("Stop", for: UIControlState())
             
         } else {
             playState = 0
@@ -126,7 +126,7 @@ class ViewController: UIViewController {
             // Stop the metronome
             metroLoop.stopLoop()
             // set button title back to "Start"
-            startStopOutlet.setTitle("Start", forState: .Normal)
+            startStopOutlet.setTitle("Start", for: UIControlState())
         }
         
         
@@ -138,17 +138,17 @@ class ViewController: UIViewController {
     
     // Up Button tag is 4
     // bpm + Touch Down
-    @IBAction func bpmUpTouchDown(sender: AnyObject) {
+    @IBAction func bpmUpTouchDown(_ sender: AnyObject) {
         bpmHold(sender)
     }
     
     // bpm + Touch Up Inside
-    @IBAction func bpmUpTouchUpInside(sender: AnyObject) {
+    @IBAction func bpmUpTouchUpInside(_ sender: AnyObject) {
         bpmRelease(sender)
     }
     
     // bpm + Touch Up Outside
-    @IBAction func bpmUpTouchUpOutside(sender: AnyObject) {
+    @IBAction func bpmUpTouchUpOutside(_ sender: AnyObject) {
         bpmRelease(sender)
     }
     
@@ -156,16 +156,16 @@ class ViewController: UIViewController {
 
     // Down Button tag is 3
     // bpm - Touch Down
-    @IBAction func bpmDownTouchDown(sender: AnyObject) {
+    @IBAction func bpmDownTouchDown(_ sender: AnyObject) {
         bpmHold(sender)
     }
     
     // bpm - Touch Up Inside
-    @IBAction func bpmDownTouchUpInside(sender: AnyObject) {
+    @IBAction func bpmDownTouchUpInside(_ sender: AnyObject) {
         bpmRelease(sender)
     }
     // bpm - Touch Up Outside
-    @IBAction func bpmDownTouchUpOutside(sender: AnyObject) {
+    @IBAction func bpmDownTouchUpOutside(_ sender: AnyObject) {
         bpmRelease(sender)
     }
 

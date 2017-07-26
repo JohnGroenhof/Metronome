@@ -3,21 +3,14 @@
 //  AudioKit
 //
 //  Created by Aurelius Prochazka, revision history on Github.
-//  Copyright (c) 2015 Aurelius Prochazka. All rights reserved.
+//  Copyright © 2017 Aurelius Prochazka. All rights reserved.
 //
 
-#ifndef AKFrequencyTrackerAudioUnit_h
-#define AKFrequencyTrackerAudioUnit_h
+#pragma once
 
-#import <AudioToolbox/AudioToolbox.h>
+#import "AKAudioUnit.h"
 
-@interface AKFrequencyTrackerAudioUnit : AUAudioUnit
-- (float)getAmplitude;
-- (float)getFrequency;
-- (void)setFrequencyLimitsWithMinimum:(float)minimum maximum:(float)maximum;
-- (void)start;
-- (void)stop;
-- (BOOL)isPlaying;
+@interface AKFrequencyTrackerAudioUnit : AKAudioUnit
+@property (readonly) float amplitude;
+@property (readonly) float frequency;
 @end
-
-#endif /* AKFrequencyTrackerAudioUnit_h */

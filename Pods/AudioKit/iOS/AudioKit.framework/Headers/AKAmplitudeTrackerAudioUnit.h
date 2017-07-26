@@ -3,19 +3,20 @@
 //  AudioKit
 //
 //  Created by Aurelius Prochazka, revision history on Github.
-//  Copyright (c) 2016 Aurelius Prochazka. All rights reserved.
+//  Copyright © 2017 Aurelius Prochazka. All rights reserved.
 //
 
-#ifndef AKAmplitudeTrackerAudioUnit_h
-#define AKAmplitudeTrackerAudioUnit_h
+#pragma once
 
-#import <AudioToolbox/AudioToolbox.h>
+#import "AKAudioUnit.h"
 
-@interface AKAmplitudeTrackerAudioUnit : AUAudioUnit
-- (float)getAmplitude;
-- (void)start;
-- (void)stop;
-- (BOOL)isPlaying;
+typedef void (^AKThresholdCallback)(BOOL);
+
+@interface AKAmplitudeTrackerAudioUnit : AKAudioUnit
+@property (readonly) float amplitude;
+@property (nonatomic) float threshold;
+//@property (nonatomic) float smoothness; //in development
+@property (nonatomic) AKThresholdCallback thresholdCallback;
+- (void)setHalfPowerPoint:(float)halfPowerPoint;
 @end
 
-#endif /* AKAmplitudeTrackerAudioUnit_h */

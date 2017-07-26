@@ -3,20 +3,16 @@
 //  AudioKit
 //
 //  Created by Aurelius Prochazka, revision history on Github.
-//  Copyright (c) 2015 Aurelius Prochazka. All rights reserved.
+//  Copyright © 2017 Aurelius Prochazka. All rights reserved.
 //
 
-#ifndef AKTesterAudioUnit_h
-#define AKTesterAudioUnit_h
+#pragma once
+#import "AKAudioUnit.h"
 
-#import <AudioToolbox/AudioToolbox.h>
+@interface AKTesterAudioUnit : AKAudioUnit
 
-@interface AKTesterAudioUnit : AUAudioUnit
-- (void)setSamples:(int)samples;
-- (NSString *)getMD5;
-- (int)getSamples;
-- (void)start;
-- (void)stop;
+@property (readonly) NSString* md5;
+@property int samples;
+
 @end
 
-#endif /* AKTesterAudioUnit_h */
