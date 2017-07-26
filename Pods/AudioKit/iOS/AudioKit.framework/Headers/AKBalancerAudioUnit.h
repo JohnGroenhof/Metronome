@@ -3,12 +3,10 @@
 //  AudioKit
 //
 //  Created by Aurelius Prochazka, revision history on Github.
-//  Copyright (c) 2015 Aurelius Prochazka. All rights reserved.
+//  Copyright © 2017 Aurelius Prochazka. All rights reserved.
 //
 
-#ifndef AKBalancerAudioUnit_h
-#define AKBalancerAudioUnit_h
-
+#pragma once
 #import <AudioToolbox/AudioToolbox.h>
 
 @interface AKBalancerAudioUnit : AUAudioUnit
@@ -17,4 +15,3 @@
 - (BOOL)isPlaying;
 @end
 
-#endif /* AKBalancerAudioUnit_h */

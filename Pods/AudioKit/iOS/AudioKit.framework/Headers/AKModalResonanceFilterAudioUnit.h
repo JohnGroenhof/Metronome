@@ -3,18 +3,13 @@
 //  AudioKit
 //
 //  Created by Aurelius Prochazka, revision history on Github.
-//  Copyright (c) 2016 Aurelius Prochazka. All rights reserved.
+//  Copyright © 2017 Aurelius Prochazka. All rights reserved.
 //
 
-#ifndef AKModalResonanceFilterAudioUnit_h
-#define AKModalResonanceFilterAudioUnit_h
+#pragma once
+#import "AKAudioUnit.h"
 
-#import <AudioToolbox/AudioToolbox.h>
-
-@interface AKModalResonanceFilterAudioUnit : AUAudioUnit
-- (void)start;
-- (void)stop;
-- (BOOL)isPlaying;
+@interface AKModalResonanceFilterAudioUnit : AKAudioUnit
+@property (nonatomic) float frequency;
+@property (nonatomic) float qualityFactor;
 @end
-
-#endif /* AKModalResonanceFilterAudioUnit_h */

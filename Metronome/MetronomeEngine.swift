@@ -9,7 +9,7 @@
 import UIKit
 
 // Metronome timer using CADisplayLink
-public class MetronomeEngine {
+open class MetronomeEngine {
     
     var displayLink: CADisplayLink!
     var triggerTime: Double
@@ -45,7 +45,7 @@ public class MetronomeEngine {
     
     
     // Called every frame from startLoop's CADisplayLink call
-    @objc private func callTickTock(sender: CADisplayLink) {
+    @objc fileprivate func callTickTock(_ sender: CADisplayLink) {
         
         // sets initial timestamp and plays first click
         if stamp == 0.0 {
@@ -78,12 +78,12 @@ public class MetronomeEngine {
     }
 
     
-    private func tickOrTock() {
+    fileprivate func tickOrTock() {
         
         // Just this block runs if there are no accents needed
         if barArray == nil {
             
-            akMetronome.clickSampler.playNote(60)
+            akMetronome.clickSampler.play()
             return
         }
         
@@ -91,11 +91,11 @@ public class MetronomeEngine {
         // a 1 in barArray fires the accent note
         if barArray![counter] == 1 {
             
-            akMetronome.accentSampler.playNote(58)
+            akMetronome.accentSampler.play()
             
         } else if barArray![counter] == 0 { // a 0 in barArray fires regular note
             
-            akMetronome.clickSampler.playNote(60)
+            akMetronome.clickSampler.play()
             
         }
         
@@ -114,12 +114,12 @@ public class MetronomeEngine {
     
     
     // Starts the clicking
-    public func startLoop() {
+    open func startLoop() {
         
-        dispatch_async(dispatch_get_main_queue()) { () -> Void in
-            self.displayLink = CADisplayLink(target: self, selector: "callTickTock:")
+        DispatchQueue.main.async { () -> Void in
+            self.displayLink = CADisplayLink(target: self, selector: #selector(MetronomeEngine.callTickTock(_:)))
             self.displayLink.frameInterval = 1
-            self.displayLink.addToRunLoop(NSRunLoop.currentRunLoop(), forMode: NSRunLoopCommonModes)
+            self.displayLink.add(to: RunLoop.current, forMode: RunLoopMode.commonModes)
         }
         
     }
@@ -128,13 +128,13 @@ public class MetronomeEngine {
 
 
     // Stops the clicking
-    public func stopLoop() {
+    open func stopLoop() {
         displayLink.invalidate()
         displayLink = nil
         
         // prints the average interval once the Stop button is pressed.
         // Note: Don't change BPM while metronome is playing
-        let averageDiffFired: Double = (diffFires as AnyObject).valueForKeyPath("@avg.self") as! Double
+        let averageDiffFired: Double = (diffFires as AnyObject).value(forKeyPath: "@avg.self") as! Double
         print(averageDiffFired)
     }
     

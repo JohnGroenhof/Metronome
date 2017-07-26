@@ -10,8 +10,19 @@ binary="$framework/AudioKit"
 
 if [ "$ACTION" == "install" ]; then
 	find "$framework/BCSymbolMaps" -name \*.bcsymbolmap -type f -exec mv {} "$CONFIGURATION_BUILD_DIR" \;
-	lipo -remove i386 -output "$binary" "$binary"
-	lipo -remove x86_64 -output "$binary" "$binary"
+
+	BINARY_INFO=`lipo -info "$binary"`
+	
+	if echo $BINARY_INFO | fgrep i386 > /dev/null; then
+	    # Binary has i386
+	    lipo -remove i386 -output "$binary" "$binary"
+	fi
+
+	if echo $BINARY_INFO | fgrep x86_64 > /dev/null; then
+	    # Binary has x86_64
+	    lipo -remove x86_64 -output "$binary" "$binary"
+	fi
+	
 	rm -f "$framework/fix-framework.sh"
 fi
 

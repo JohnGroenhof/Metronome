@@ -16,24 +16,32 @@ import AudioKit
 
 // Class for AudioKit implementation. Sets up AK and AKSamplers with 
 //    wav files and starts AK.
-public class SetupAKMetronome {
+open class SetupAKMetronome {
     
     let clickSampler = AKSampler()
     let accentSampler = AKSampler()
 
     init() {
 
-        clickSampler.loadWav("cowbell")
-        accentSampler.loadWav("cowbellaccent")
+        do 
+        {
+            try clickSampler.loadWav("cowbell")
+            try accentSampler.loadWav("cowbellaccent")
         
         // Load AKSamplers into AKMixer
         let samplerMixer = AKMixer(clickSampler, accentSampler)
         
         // Set the sampler mixer to the main audio output
-        AudioKit.output = samplerMixer
-
+       
+            AudioKit.output = samplerMixer
+            AudioKit.start() //Starts AK Engine
+        }
+        catch let error
+        {
+            print(error)
+        }
         
-        AudioKit.start() //Starts AK Engine
+       
         
     }
     

@@ -16,11 +16,13 @@
 		52FDACB71C50979C00D050E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FDACB51C50979C00D050E6 /* LaunchScreen.storyboard */; };
 		52FF31081C57361400E29FF9 /* MetronomeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF31071C57361400E29FF9 /* MetronomeEngine.swift */; };
 		52FF310B1C573BD700E29FF9 /* SetupAKMetronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF310A1C573BD700E29FF9 /* SetupAKMetronome.swift */; };
-		FC2BEC56CD98B83916E58719 /* Pods_Metronome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB567E233CEC8A1DD7A9857 /* Pods_Metronome.framework */; };
+		D37A0E2A3D2F057249084205 /* Pods_Metronome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 122B58D660791C456021E9DB /* Pods_Metronome.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		16265004F8BD6B25FCB496F7 /* Pods-Metronome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metronome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Metronome/Pods-Metronome.debug.xcconfig"; sourceTree = "<group>"; };
+		11E7D6B442B93160D360C263 /* Pods-Metronome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metronome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Metronome/Pods-Metronome.debug.xcconfig"; sourceTree = "<group>"; };
+		122B58D660791C456021E9DB /* Pods_Metronome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Metronome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50358D8F4765E4CB1F56C24A /* Pods-Metronome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metronome.release.xcconfig"; path = "Pods/Target Support Files/Pods-Metronome/Pods-Metronome.release.xcconfig"; sourceTree = "<group>"; };
 		5272D4001C50DCE0009DF555 /* cowbell.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cowbell.wav; sourceTree = "<group>"; };
 		5272D4011C50DCE0009DF555 /* cowbellaccent.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cowbellaccent.wav; sourceTree = "<group>"; };
 		52FDACA91C50979C00D050E6 /* Metronome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metronome.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,8 +34,6 @@
 		52FDACB81C50979C00D050E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52FF31071C57361400E29FF9 /* MetronomeEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetronomeEngine.swift; sourceTree = "<group>"; };
 		52FF310A1C573BD700E29FF9 /* SetupAKMetronome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupAKMetronome.swift; sourceTree = "<group>"; };
-		64FDCDFCF4049B324FB822F2 /* Pods-Metronome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metronome.release.xcconfig"; path = "Pods/Target Support Files/Pods-Metronome/Pods-Metronome.release.xcconfig"; sourceTree = "<group>"; };
-		EBB567E233CEC8A1DD7A9857 /* Pods_Metronome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Metronome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,20 +41,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC2BEC56CD98B83916E58719 /* Pods_Metronome.framework in Frameworks */,
+				D37A0E2A3D2F057249084205 /* Pods_Metronome.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		12FC6FF9574F201043D082C9 /* Pods */ = {
+		492E991B7E2E0F7C2DC1D052 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				16265004F8BD6B25FCB496F7 /* Pods-Metronome.debug.xcconfig */,
-				64FDCDFCF4049B324FB822F2 /* Pods-Metronome.release.xcconfig */,
+				122B58D660791C456021E9DB /* Pods_Metronome.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		5272D3FE1C50DC5B009DF555 /* Images */ = {
@@ -78,8 +77,8 @@
 			children = (
 				52FDACAB1C50979C00D050E6 /* Metronome */,
 				52FDACAA1C50979C00D050E6 /* Products */,
-				12FC6FF9574F201043D082C9 /* Pods */,
-				D32D977DAE7E1F3A4918AAA5 /* Frameworks */,
+				8C8F0A4EE40FF6C9C7ABBE99 /* Pods */,
+				492E991B7E2E0F7C2DC1D052 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,12 +107,13 @@
 			path = Metronome;
 			sourceTree = "<group>";
 		};
-		D32D977DAE7E1F3A4918AAA5 /* Frameworks */ = {
+		8C8F0A4EE40FF6C9C7ABBE99 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EBB567E233CEC8A1DD7A9857 /* Pods_Metronome.framework */,
+				11E7D6B442B93160D360C263 /* Pods-Metronome.debug.xcconfig */,
+				50358D8F4765E4CB1F56C24A /* Pods-Metronome.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,12 +123,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52FDACBB1C50979C00D050E6 /* Build configuration list for PBXNativeTarget "Metronome" */;
 			buildPhases = (
-				57D4309E548DF5D483EFFABF /* Check Pods Manifest.lock */,
+				915949064F620A50E7B7F27B /* [CP] Check Pods Manifest.lock */,
 				52FDACA51C50979C00D050E6 /* Sources */,
 				52FDACA61C50979C00D050E6 /* Frameworks */,
 				52FDACA71C50979C00D050E6 /* Resources */,
-				6FBF48AD865493354FB0FBF1 /* Embed Pods Frameworks */,
-				4E936FAF4B45E893EF4EF32E /* Copy Pods Resources */,
+				351D70651574528170DC40BD /* [CP] Embed Pods Frameworks */,
+				1A4149F11B7549BB44477409 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,12 +146,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Spiraal;
 				TargetAttributes = {
 					52FDACA81C50979C00D050E6 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = P234QZN5F5;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -189,14 +190,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4E936FAF4B45E893EF4EF32E /* Copy Pods Resources */ = {
+		1A4149F11B7549BB44477409 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,34 +205,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Metronome/Pods-Metronome-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		57D4309E548DF5D483EFFABF /* Check Pods Manifest.lock */ = {
+		351D70651574528170DC40BD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		6FBF48AD865493354FB0FBF1 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Metronome/Pods-Metronome-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		915949064F620A50E7B7F27B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -283,8 +284,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -329,8 +332,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -350,6 +355,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -357,7 +363,7 @@
 		};
 		52FDACBC1C50979C00D050E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16265004F8BD6B25FCB496F7 /* Pods-Metronome.debug.xcconfig */;
+			baseConfigurationReference = 11E7D6B442B93160D360C263 /* Pods-Metronome.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -369,12 +375,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.spiraal.AKv3;
 				PRODUCT_NAME = Metronome;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		52FDACBD1C50979C00D050E6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64FDCDFCF4049B324FB822F2 /* Pods-Metronome.release.xcconfig */;
+			baseConfigurationReference = 50358D8F4765E4CB1F56C24A /* Pods-Metronome.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -386,6 +393,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.spiraal.AKv3;
 				PRODUCT_NAME = Metronome;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

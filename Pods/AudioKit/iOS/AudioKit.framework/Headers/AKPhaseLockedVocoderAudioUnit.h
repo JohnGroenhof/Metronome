@@ -3,24 +3,19 @@
 //  AudioKit
 //
 //  Created by Aurelius Prochazka, revision history on Github.
-//  Copyright (c) 2016 Aurelius Prochazka. All rights reserved.
+//  Copyright © 2017 Aurelius Prochazka. All rights reserved.
 //
 
-#ifndef AKPhaseLockedVocoderAudioUnit_h
-#define AKPhaseLockedVocoderAudioUnit_h
+#pragma once
+#import "AKAudioUnit.h"
 
-#import <AudioToolbox/AudioToolbox.h>
-
-@interface AKPhaseLockedVocoderAudioUnit : AUAudioUnit
+@interface AKPhaseLockedVocoderAudioUnit : AKAudioUnit
 @property (nonatomic) float position;
 @property (nonatomic) float amplitude;
 @property (nonatomic) float pitchRatio;
 
 - (void)setupAudioFileTable:(float *)data size:(UInt32)size;
 
-- (void)start;
-- (void)stop;
-- (BOOL)isPlaying;
 @end
 
-#endif /* AKPhaseLockedVocoderAudioUnit_h */
+

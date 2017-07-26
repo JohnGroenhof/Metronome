@@ -3,15 +3,13 @@
 //  AudioKit
 //
 //  Created by Aurelius Prochazka, revision history on Github.
-//  Copyright (c) 2016 Aurelius Prochazka. All rights reserved.
+//  Copyright © 2017 Aurelius Prochazka. All rights reserved.
 //
 
-#ifndef AKDripAudioUnit_h
-#define AKDripAudioUnit_h
+#pragma once
+#import "AKAudioUnit.h"
 
-#import <AudioToolbox/AudioToolbox.h>
-
-@interface AKDripAudioUnit : AUAudioUnit
+@interface AKDripAudioUnit : AKAudioUnit
 @property (nonatomic) float intensity;
 @property (nonatomic) float dampingFactor;
 @property (nonatomic) float energyReturn;
@@ -21,9 +19,7 @@
 @property (nonatomic) float amplitude;
 
 - (void)trigger;
-- (void)start;
-- (void)stop;
-- (BOOL)isPlaying;
+
 @end
 
-#endif /* AKDripAudioUnit_h */
+

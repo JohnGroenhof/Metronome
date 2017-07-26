@@ -3,21 +3,17 @@
 //  AudioKit
 //
 //  Created by Aurelius Prochazka, revision history on Github.
-//  Copyright (c) 2015 Aurelius Prochazka. All rights reserved.
+//  Copyright © 2017 Aurelius Prochazka. All rights reserved.
 //
 
-#ifndef AKOperationEffectAudioUnit_h
-#define AKOperationEffectAudioUnit_h
+#pragma once
 
-#import <AudioToolbox/AudioToolbox.h>
+#import "AKAudioUnit.h"
 
-@interface AKOperationEffectAudioUnit : AUAudioUnit
+@class AKCustomUgen;
+
+@interface AKOperationEffectAudioUnit : AKAudioUnit
+@property (nonatomic) NSArray *parameters;
 - (void)setSporth:(NSString *)sporth;
-
-- (void)setParameters:(NSArray *)parameters;
-- (void)start;
-- (void)stop;
-- (BOOL)isPlaying;
+- (void)addCustomUgen:(AKCustomUgen *)ugen;
 @end
-
-#endif /* AKOperationEffectAudioUnit_h */
