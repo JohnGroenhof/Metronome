@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,24 +20,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJt-PV-t8s">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJt-PV-t8s">
                                 <rect key="frame" x="129" y="84" width="117" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="ARr-ro-VTg"/>
+                                    <constraint firstAttribute="height" constant="62" id="ZKU-Ic-QUd"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="59"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Metronome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRN-n9-8Da">
-                                <rect key="frame" x="100" y="28" width="174" height="38"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Metronome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRN-n9-8Da">
+                                <rect key="frame" x="138" y="43" width="98" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5j-Df-ObI">
-                                <rect key="frame" x="254" y="100" width="30" height="30"/>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5j-Df-ObI">
+                                <rect key="frame" x="254" y="85" width="30" height="60"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="+">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="bpmUpTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="i7c-IY-KZ5"/>
@@ -41,11 +49,11 @@
                                     <action selector="bpmUpTouchUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="rbQ-dt-CvZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCY-oX-BRb">
-                                <rect key="frame" x="91" y="100" width="30" height="30"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCY-oX-BRb">
+                                <rect key="frame" x="91" y="85" width="30" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="-">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="bpmDownTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="GRd-3O-apR"/>
@@ -53,26 +61,44 @@
                                     <action selector="bpmDownTouchUpOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="p5V-iP-kg6"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BPM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQX-dC-9g0">
-                                <rect key="frame" x="173" y="147" width="28" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BPM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQX-dC-9g0">
+                                <rect key="frame" x="174" y="147" width="26" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" red="0.97647058819999999" green="0.52941176469999995" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.97647058819999999" green="0.52941176469999995" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAm-cC-VjV">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAm-cC-VjV">
                                 <rect key="frame" x="165" y="185" width="45" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="qQm-rn-Pm5"/>
+                                    <constraint firstAttribute="width" constant="45" id="zfW-wa-wcv"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Start">
-                                    <color key="titleColor" red="1" green="0.24288470640000001" blue="0.1563789143" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="0.24288470640000001" blue="0.1563789143" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="startStopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xvp-xS-LIx"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DJt-PV-t8s" firstAttribute="leading" secondItem="WCY-oX-BRb" secondAttribute="trailing" constant="8" symbolic="YES" id="0ov-w7-WtX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pAm-cC-VjV" secondAttribute="bottom" constant="456" id="AP8-9h-ba7"/>
+                            <constraint firstItem="DJt-PV-t8s" firstAttribute="centerX" secondItem="JRN-n9-8Da" secondAttribute="centerX" id="Cbg-Ia-HNw"/>
+                            <constraint firstItem="DJt-PV-t8s" firstAttribute="centerY" secondItem="WCY-oX-BRb" secondAttribute="centerY" id="E8R-UQ-lvY"/>
+                            <constraint firstItem="pAm-cC-VjV" firstAttribute="top" secondItem="WQX-dC-9g0" secondAttribute="bottom" constant="18" id="Lpm-17-BVu"/>
+                            <constraint firstItem="DJt-PV-t8s" firstAttribute="centerX" secondItem="WQX-dC-9g0" secondAttribute="centerX" id="WoX-mv-AKg"/>
+                            <constraint firstItem="DJt-PV-t8s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YiO-Mn-i08"/>
+                            <constraint firstItem="DJt-PV-t8s" firstAttribute="centerY" secondItem="n5j-Df-ObI" secondAttribute="centerY" id="gUm-Il-Cpm"/>
+                            <constraint firstItem="DJt-PV-t8s" firstAttribute="top" secondItem="JRN-n9-8Da" secondAttribute="bottom" constant="18" id="q99-kX-Nd6"/>
+                            <constraint firstItem="DJt-PV-t8s" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="84" id="qLa-MS-UPg"/>
+                            <constraint firstItem="n5j-Df-ObI" firstAttribute="leading" secondItem="DJt-PV-t8s" secondAttribute="trailing" constant="8" symbolic="YES" id="sKb-kj-2h1"/>
+                            <constraint firstItem="WQX-dC-9g0" firstAttribute="top" secondItem="DJt-PV-t8s" secondAttribute="bottom" constant="1" id="wSA-qI-Z0q"/>
+                            <constraint firstItem="DJt-PV-t8s" firstAttribute="centerX" secondItem="pAm-cC-VjV" secondAttribute="centerX" id="zgJ-FN-4Xi"/>
+                        </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="bpmOutlet" destination="DJt-PV-t8s" id="Scq-h9-HnF"/>
                         <outlet property="startStopOutlet" destination="pAm-cC-VjV" id="Rnn-Ac-bkT"/>
